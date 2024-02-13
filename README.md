@@ -1,4 +1,4 @@
 # deforestationmap
 
 <!-- ADDING ANOTHER LINE TO THE README.MD -->
-<!-- Adding another line to the readme.md -->
+Here is a line in the readme
