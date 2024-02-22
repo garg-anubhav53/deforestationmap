@@ -1,5 +1,5 @@
 import React from "react";
-import data from "./countries_land_large.json";
+import data from "./with_country_codes.json";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 
