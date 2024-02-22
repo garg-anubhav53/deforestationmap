@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load data from CSV file into a pandas DataFrame
 
-df = pd.read_csv('forest_area_km.csv')
+df = pd.read_csv('forest_data_processing/forest_area_km.csv')
 
 # Display the first few rows of the DataFrame
 head = df.head()
