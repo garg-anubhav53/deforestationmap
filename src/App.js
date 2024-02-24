@@ -1,6 +1,7 @@
 import React from "react";
 import data from "./map_files/with_country_codes.json";
 import { ZoomableGroup, ComposableMap, Geographies, Geography } from "react-simple-maps";
+import './App.css';
 
 
 function App() {
@@ -9,9 +10,11 @@ function App() {
       <ComposableMap
         projection="geoEqualEarth"
         projectionConfig={{
-          scale: 200,
+          center: [0, 55],
+          scale: 170,
         }}>
-          <Geographies geography={data}>
+          <ZoomableGroup>
+            <Geographies geography={data}>
               {({ geographies }) => 
                 geographies.map((geo) => (
                   <Geography key={geo.rsmKey} 
@@ -30,6 +33,7 @@ function App() {
                 ))
               }
             </Geographies>
+          </ZoomableGroup>
       </ComposableMap>
     </div>
   );
